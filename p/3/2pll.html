@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>acezephyr.us, a cool site</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/navbar.js"></script>
+	<script src="/js/twistysim.js"></script>
+	<script src="/js/twistyhelper.js"></script>
+	<script src="/js/2pll.js"></script>
+	<script src="/js/pll.js"></script>
+	<script>
+		data.algPlacement = [{
+			container: "edges"
+			, cases: [17, 18, 9, 21]
+		}];
+		$(function () {
+			makeAlgs("edges", data);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<h1>2-look PLL</h1>
+		<h2>What is 2-look PLL?</h2>
+		<p>PLL (Permutation of the Last Layer) is the last step of the CFOP method, where you move all the pieces around the top layer.</p>
+		<p>2-look PLL solves this in two steps, and there are only 6 algorithms total.</p>
+		<p>If you want to get faster after being fairly good at beginner's method PLL, this is what to learn.</p>
+		<div class="pagenav">
+			<div class="element">
+				<a href="#cornertext"> <img src="/i/3/2pll/index/corners.svg" alt="">
+					<p>Step 1: Corners</p>
+				</a>
+			</div>
+			<div class="element">
+				<a href="#edgetext"> <img src="/i/3/2pll/index/edges.svg" alt="">
+					<p>Step 2: Corners</p>
+				</a>
+			</div>
+		</div>
+		<h1 id="cornertext">Step 1: Corners</h1>
+		<p>There are two unsolved corners cases:</p>
+		<div id="corners"></div>
+		<h1 id="edgetext">Step 2: Edges</h1>
+		<p>There are four edge permutations:</p>
+		<div id="edges"> </div>
+	</div>
+</body>
+
+</html>

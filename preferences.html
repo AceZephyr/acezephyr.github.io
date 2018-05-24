@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/navbar.js"></script>
+    <title>acezephyr.us, a cool site</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Site Preferences</h1>
+        <h2>There are a few things you can set here. They will be saved in your cookies, so if you clear those, your settings will be erased.</h2>
+        <div id="preferences" style="width: 50%;margin: 0 auto">
+            <h3 class="center">Animation Color Scheme:</h3>
+            <form action="/p/preferences-save.html" style="float: left">
+                <label for="preferences-form-up">Up</label>
+                <select name="u" id="preferences-form-up">
+                    <option selected value="y">Yellow</option>
+                    <option value="w">White</option>
+                    <option value="r">Red</option>
+                    <option value="o">Orange</option>
+                    <option value="g">Green</option>
+                    <option value="b">Blue</option>
+                </select>
+                <br>
+                <label for="preferences-form-down">Down</label>
+                <select name="d" id="preferences-form-down">
+                    <option value="y">Yellow</option>
+                    <option selected value="w">White</option>
+                    <option value="r">Red</option>
+                    <option value="o">Orange</option>
+                    <option value="g">Green</option>
+                    <option value="b">Blue</option>
+                </select>
+                <br>
+                <label for="preferences-form-left">Left</label>
+                <select name="l" id="preferences-form-left">
+                    <option value="y">Yellow</option>
+                    <option value="w">White</option>
+                    <option selected value="r">Red</option>
+                    <option value="o">Orange</option>
+                    <option value="g">Green</option>
+                    <option value="b">Blue</option>
+                </select>
+                <br>
+                <label for="preferences-form-right">Right</label>
+                <select name="r" id="preferences-form-right">
+                    <option value="y">Yellow</option>
+                    <option value="w">White</option>
+                    <option value="r">Red</option>
+                    <option selected value="o">Orange</option>
+                    <option value="g">Green</option>
+                    <option value="b">Blue</option>
+                </select>
+                <br>
+                <label for="preferences-form-front">Front</label>
+                <select name="f" id="preferences-form-front">
+                    <option value="y">Yellow</option>
+                    <option value="w">White</option>
+                    <option value="r">Red</option>
+                    <option value="o">Orange</option>
+                    <option selected value="g">Green</option>
+                    <option value="b">Blue</option>
+                </select>
+                <br>
+                <label for="preferences-form-back">Back</label>
+                <select name="b" id="preferences-form-back">
+                    <option value="y">Yellow</option>
+                    <option value="w">White</option>
+                    <option value="r">Red</option>
+                    <option value="o">Orange</option>
+                    <option value="g">Green</option>
+                    <option selected value="b">Blue</option>
+                </select>
+                <br>
+                <input type="submit" value="Save"> </form>
+            <div style="float:right">
+                <p style="float: right">Presets:</p>
+                <form action="preferences-save.html">
+                    <input type="hidden" name="c" id="" value="wogyrb">
+                    <input type="submit" value="Yellow top, green front"> </form>
+                <form action="preferences-save.html">
+                    <input type="hidden" name="c" id="" value="yobwrg">
+                    <input type="submit" value="White top, blue front"> </form>
+                <form action="preferences-save.html">
+                    <input type="hidden" name="c" id="" value="ogwrby">
+                    <input type="submit" value="Red top, white front"> </form>
+                <form action="preferences-save.html">
+                    <input type="hidden" name="c" id="" value="rgyobw">
+                    <input type="submit" value="Orange top, yellow front"> </form>
+                <form action="preferences-save.html">
+                    <input type="hidden" name="c" id="" value="gwobyr">
+                    <input type="submit" value="Blue top, orange front"> </form>
+                <form action="preferences-save.html">
+                    <input type="hidden" name="c" id="" value="bwrgyo">
+                    <input type="submit" value="Green top, red front"> </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        if (getCookie("colors") == null || getCookie("colors") == "") {
+            var d = new Date();
+            d.setTime(d.getTime() + (10 * 365 * 24 * 60 * 60 * 1000));
+            document.cookie = "colors=wogyrb;expires=" + d.toUTCString() + ";path=/";
+        }
+    </script>
+</body>
+
+</html>

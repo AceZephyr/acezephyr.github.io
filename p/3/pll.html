@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/navbar.js"></script>
+	<script src="/js/twistysim.js"></script>
+	<script src="/js/twistyhelper.js"></script>
+	<script src="/js/pll.js"></script>
+	<script>
+		//make pll algs from pll.js file
+		$(function () {
+			makeAlgs("algs", data);
+		});
+	</script>
+	<title>acezephyr.us, a cool site</title>
+</head>
+
+<body>
+	<div id="container">
+		<h1>PLL</h1>
+		<h2>What is PLL?</h2>
+		<p>PLL (Permutation of the Last Layer) is the fourth and final step in the CFOP method, where you permute all the pieces on the last layer.</p>
+		<div class="pagenav">
+			<div class="element">
+				<a href="#edges"> <img src="/i/3/pll/index/edges.svg" alt="">
+					<p>Edge Permutation</p>
+				</a>
+			</div>
+			<div class="element">
+				<a href="#adjacent"> <img src="/i/3/pll/index/adj.svg" alt="">
+					<p>Adjacent Swap</p>
+				</a>
+			</div>
+			<div class="element">
+				<a href="#diagonal"> <img src="/i/3/pll/index/diag.svg" alt="">
+					<p>Diagonal Swap</p>
+				</a>
+			</div>
+		</div>
+		<div id="algs"></div>
+	</div>
+</body>
+
+</html>

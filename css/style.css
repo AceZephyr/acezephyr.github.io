@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*global selectors*/
+
+.alg {
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    max-width: calc(100% - 4px);
+}
+
+.alg:hover {
+    color: lightslategray;
+}
+
+.alg:active {
+    color: lightblue;
+}
+
+body {
+    background-color: lightgray;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    padding: .5em;
+    padding-top: .75em;
+}
+
+h2 {
+    font-size: 20px;
+    padding: .25em;
+}
+
+p {
+    padding: .25em;
+    font-size: 18px;
+}
+
+a {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+a img {
+    border: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    padding-left: 1.5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: navy;
+}
+
+a:hover,
+a:focus {
+    color: cornflowerblue;
+}
+
+a.link {
+    display: block;
+    text-align: center;
+    color: #000;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+
+/*end global selectors*/
+
+/*alg window*/
+
+div#algwindow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    height: 201px;
+    width: 200px;
+}
+
+div#windowdisplay {
+    width: 200px;
+    background-color: darkgray;
+}
+
+
+/*navbar*/
+
+#nav-container {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2em;
+    color: white;
+    background-color: black;
+}
+
+#nav-container a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav-container a:hover {
+    color: lightslategray;
+}
+
+#nav-container a:active {
+    color: lightblue;
+}
+
+#nav-container > a#index-warp {
+    position: absolute;
+    padding: .3em .5em .7em;
+}
+
+#nav-container ul {
+    position: absolute;
+    top: 0em;
+    left: 0px;
+    list-style: none;
+}
+
+#nav-container ul > li {
+    float: left;
+}
+
+#nav-container ul > li > a {
+    padding: .3em .5em .7em;
+    text-align: center;
+    display: block;
+}
+
+
+/*dropdown*/
+
+#nav-container ul > li > div {
+    display: none;
+    position: absolute;
+    top: 2em;
+    background-color: gray;
+    min-width: 160px;
+    width: 100%;
+    padding: 4px;
+}
+
+#nav-container ul > li:hover > div {
+    display: block;
+}
+
+#nav-container ul > li > div > a {
+    display: block;
+    padding: 1px;
+}
+
+#nav-container ul > li > div > a:hover {
+    background-color: dimgray;
+    color: lightblue;
+}
+
+#nav-container ul > li > div > a:active {
+    background-color: darkgray;
+    color: skyblue;
+}
+
+
+/*main container*/
+
+#container {
+    margin: .5em;
+    position: relative;
+    top: 2em;
+}
+
+#container div.pagenav {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#container div.pagenav div.element {
+    display: inline-block;
+    text-align: center;
+}
+
+#container table.algs {
+    max-width: calc(100% - 224px);
+    padding: 1em;
+}
+
+#container table.algs .casename {
+    width: 200px;
+}
+
+#container table.algs img {
+    display: block;
+}
+
+
+/*end main container*/
+
+@media screen and (max-width:860px) {
+    #container table.algs {
+        width: 100%;
+        max-width: calc(100% - 191px);
+    }
+    #container table.algs tr {
+        border: 1px solid black;
+    }
+    #container table.algs td {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .algwindowExists {
+        margin-bottom: 210px !important;
+    }
+    #container table.algs {
+        max-width: 100%;
+    }
+    div#algwindow {
+        width: 100%;
+    }
+    div#windowdisplay {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #nav-container {
+        position: relative;
+        display: block;
+        height: auto;
+        background-color: gray;
+    }
+    #nav-container ul {
+        position: static;
+    }
+    #nav-container ul > li {
+        background-color: black;
+        float: none;
+        width: 130px;
+    }
+    #nav-container ul > li:hover > div {
+        min-height: calc(100% - 8px);
+        margin-left: 130px;
+        top: 0;
+    }
+    #nav-container ul > li:hover > div > a {
+        max-width: calc(100% - 135px);
+    }
+    #nav-container ul > li > a {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    #container {
+        top: 0px;
+    }
+}
