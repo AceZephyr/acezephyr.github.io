@@ -235,6 +235,70 @@ div#windowdisplay {
 
 /*end main container*/
 
+/*begin botw*/
+
+#container #botw-counters {
+    float: left;
+    width: 15%;
+    height: 700px;
+    overflow-y: auto;
+}
+
+#container #botw-counters .botw-counter {
+    font-family: monospace;
+}
+
+#container #botw-mapFrame {
+    width: 60%;
+    height: 700px;
+    float: left;
+}
+
+#container #botw-backwards,
+#container #botw-forwards {
+    float: right;
+    width: 25%;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+#container #botw-backwards:active,
+#container #botw-forwards:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+#container #botw-backwards {
+    height: 100px;
+    background-color: darkred;
+}
+
+#container #botw-backwards:active {
+    background-color: red;
+}
+
+#container #botw-forwards {
+    height: 600px;
+    background-color: darkgreen;
+}
+
+#container #botw-forwards:active {
+    background-color: green;
+}
+
+#container #botw-comment {
+    clear: both;
+    float: left;
+    width: 75%;
+}
+
+#container #botw-fileIn {
+    float: right;
+}
+
+/*end botw*/
+
 @media screen and (max-width:860px) {
     #container table.algs {
         width: 100%;

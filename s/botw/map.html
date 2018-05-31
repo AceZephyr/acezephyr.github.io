@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/navbar.min.js"></script>
+    <script src="/js/ext/file-wrapper.min.js"></script>
+    <script src="/js/ext/line-navigator.min.js"></script>
+    <script src="/js/korokMap.min.js"></script>
+    <script src="/js/botw-map.js"></script>
+    <title>acezephyr.us, a cool site</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="botw-counters">
+            <p>Counters:</p>
+        </div>
+        <iframe src="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/" frameborder="0" id="botw-mapFrame"></iframe>
+        <input id="botw-backwards" type="button" value="backwards" onclick="backwards();">
+        <input id="botw-forwards" type="button" value="forwards" onclick="forwards();">
+        <p id="botw-comment"></p>
+        <input type="file" name="botw-fileIn" id="botw-fileIn" onchange="onFile();">
+    </div>
+</body>
+
+</html>
