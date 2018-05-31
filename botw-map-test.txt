@@ -1,0 +1,17 @@
+Follow the Sheikah Slate;k=0,s=0:Exit the Cave
+-p10;k+1:Axe, lizard under rock, dive into rings for korok
+Great Plateau Tower:Boko Shield, Tower
+The Isolated Plateau:Fall Damage Cancel, talk to the man
+Oman Au Shrine;s+1:Run to Oman Au Shrine
+-p01;k+1:DLC Ruby, Hyrule Herbs, get korok under teepee
+-p02;k+1:Shieldjump to platform, fire and ice arrow chests, magnesis rock into hole
+Shrine of Resurrection:Warp to Shrine of Resurrection
+Keh Namut Shrine;s+1:Cold Run to Keh Namut
+Owa Daim Shrine;s+1:Cold Run to Owa Daim, get extra sledgehammer before entering
+Ja Baij Shrine;s+1:Boulder rocket and tree rocket to shrine
+Destroy Ganon:Launch from Ja Baij to Temple of Time
+-p11;k+1:Climb up ToT to korok
+-p18;k+1:Glide south, bomb the wooden barricade open, get stamina shroom, beehive, and bomb arrows<br>go to the hut, korok on top
+?lat=0.8488&lng=0.6904:Loot house, get doublet, axe, and stamina shrooms<br>light campfire, make stamina shroom x3 meals, get pot lid, wait until morning
+-L08;k+1:jump off plateau, glide to here, cryojumps to get korok
+Oman Au Shrine:Ragdoll Reset, Warp to Oman Au
